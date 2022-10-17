@@ -17,7 +17,7 @@ jobs:
     - run: git submodule init
     - run: git submodule update
     - run: go generate
-    - run: touch testfile
+    - run: touch testfile2
     - uses: peter-evans/create-pull-request@ad43dccb4d726ca8514126628bec209b8354b6dd # Create Pull Request v4.1.4
       with:
         commit-message: "chore: update submodules and go generate"
